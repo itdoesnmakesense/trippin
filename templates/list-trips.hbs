@@ -1,0 +1,22 @@
+{{#each this}}
+<div class="col-md-4 trip-container">
+    <div class="row">
+        <div class="col-md-12">
+          <h2>{{location}}</h2>
+        </div>
+     <div class="col-md-12">
+      <div class="row reviews-row">
+      {{#each reviews}}
+        <div class="col-md-12">
+          {{date}}
+        </div>
+        <div class="col-md-12">
+          {{title}}
+        </div>
+      {{/each}}
+    </div> <!-- end reviews-row-->
+  </div><!-- end col-md-12 before reviews row-->
+    </div> <!-- end row-->
+</div> <!-- end col-md-4 -->
+
+{{/each}}
